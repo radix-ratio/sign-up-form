@@ -2,7 +2,13 @@
     line-height: 1.5;
 }
 
-h1, h2, h3, h4, h5, figure, p, ol, ul {
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
     margin: 0;
 }
 
@@ -17,6 +23,6 @@ h1, h2, h3, h4, h5 {
 }
 
 img {
+    max-width: 100%;
     display: block;
-    max-inline-size: 100%;
-} 
+}
