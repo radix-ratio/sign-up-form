@@ -10,12 +10,61 @@
 <body>
     <div class="wrapper">
         <section class="aside-photo">
-            
+            <section class="logo">
+                <img src="img/mjolnir.svg" alt="logo">
+                <span class="logo-name">Sign up</span>
+            </section>
+            <p>
+                Photo by <a href="https://unsplash.com/@litvinov">Egor Litvinov</a>
+                on <a href="https://unsplash.com/">Unsplash</a>
+            </p>
         </section>
         <section class="content">
-            <!-- description -->
-            <!-- form input -->
-            <!-- submit button -->
+            <section class="description">
+                <p>This is not a real online service! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, commodi! <br>
+                Sign up now to get started. </p>
+                
+                <p>You know you want to.</p>
+                
+            </section>
+            <section class="form">
+                <p>Let's do this!</p>
+                <form action="#">
+                    <div class="form-group">
+                        <label for="name">First name</label>
+                        <input required placeholder="first name" type="text" id="name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name">Last name</label>
+                        <input required placeholder="last name" type="text" id="name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input required placeholder="email" type="email" id="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone number</label>
+                        <input type="tel" id="phone" placeholder="123-456-789" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="11" />
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input required placeholder="******" type="password" id="password">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Confirm password</label>
+                        <input required placeholder="******" type="password" id="password">
+                    </div>
+                </form>
+            </section>
+            <section class="submit">
+                <button>Create account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </section>
         </section>
     </div>
 </body>
