@@ -36,3 +36,19 @@
 html {
     color-scheme: light dark;
 }
+
+body{
+    color: var(--clr-text);
+}
+
+.wrapper {
+    width: min(100% - 2rem, 75rem);
+    margin-inline: auto;
+    display: flex;
+}
+
+.flow > * + * {
+    margin-top: var(--flow-space, 1em);
+}
+
+
