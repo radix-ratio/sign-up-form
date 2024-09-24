@@ -8,9 +8,10 @@
 :root {
     /* for color palette use: https://www.realtimecolors.com/?colors=050315-fbfbfe-2f27ce-dedcff-433bff&fonts=Inter-Inter */
     --clr-text: hsl(31, 22%, 19%);
-    --clr-background: hsl(250, 255%, 253%);
-    --clr-primary: hsl(210, 224%, 224%);
-    --clr-accent: hsl(2, 95%, 116%);
+    --clr-body: hsl(0, 0%, 100%);
+    --clr-background: hsl(156, 100, 99);
+    --clr-primary: hsl(180, 18, 75);
+    --clr-accent: hsl(191, 97, 23);
 
     --clr-success: hsl(143, 100%, 26%);
     --clr-warning: hsl(43, 100%, 66%);
@@ -72,7 +73,7 @@ body{
 }
 
 .aside-photo > p {
-    color: var(--clr-background);
+    color: var(--clr-body);
     text-align: center;
     padding: 1rem;
     margin-top: auto;
@@ -80,7 +81,7 @@ body{
 }
 
 .aside-photo > p > a {
-    color: var(--clr-background);
+    color: var(--clr-body);
 }
 
 .logo {
@@ -97,7 +98,7 @@ body{
 .logo-name {
     font-family: var(--ff-logo);
     font-size: var(--fs-logo);
-    color: var(--clr-background);
+    color: var(--clr-body);
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -105,4 +106,18 @@ body{
 .logo img {
     height: 10rem;
     color: var(--clr-text);
+}
+
+/* content */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: var(--fs-300);
+    font-weight: bold;
+    padding-inline: 6rem;
+}
+
+.description{
+    background-color: var(--clr-primary);
 }
