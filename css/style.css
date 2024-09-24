@@ -1,5 +1,9 @@
 @import "modern-normalize.css";
 @import "reset.css";
+@font-face {
+    font-family: "Norse Bold";
+    src: url(../fonts/Norse-Bold.otf);
+}
 
 :root {
     /* for color palette use: https://www.realtimecolors.com/?colors=050315-fbfbfe-2f27ce-dedcff-433bff&fonts=Inter-Inter */
@@ -12,9 +16,11 @@
     --clr-warning: hsl(43, 100%, 66%);
     --clr-error: hsl(348, 55%, 49%);
 
-
+    --ff-logo: "Norse Bold";
 
     /* for fonts sizes use: https://utopia.fyi/type/calculator*/
+    --fs-logo: clamp(2rem, 10vw, 10rem);
+    
     --fs-300: clamp(1rem, 0.8696rem + 0.6522vw, 1.375rem);
     --fs-400: clamp(1.2rem, 1.0196rem + 0.9022vw, 1.7188rem);
     --fs-500: clamp(1.44rem, 1.1936rem + 1.2321vw, 2.1484rem);
@@ -42,7 +48,6 @@ body{
 }
 
 .wrapper {
-    width: min(100% - 2rem, 75rem);
     margin-inline: auto;
     display: flex;
 }
@@ -52,3 +57,52 @@ body{
 }
 
 
+/* aside photo */
+.aside-photo {
+    background-image: url(../img/background-photo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 33%;
+
+}
+
+.aside-photo > p {
+    color: var(--clr-background);
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+
+}
+
+.aside-photo > p > a {
+    color: var(--clr-background);
+}
+
+.logo {
+    display: flex;
+    position: relative;
+    top: 15rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    background-color: hsl(from var(--clr-text) h s l / 50%);
+
+}
+
+.logo-name {
+    font-family: var(--ff-logo);
+    font-size: var(--fs-logo);
+    color: var(--clr-background);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.logo img {
+    height: 10rem;
+    color: var(--clr-text);
+}
