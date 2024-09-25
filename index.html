@@ -25,39 +25,43 @@
                 <p>Sign up now to get started. </p>
                 
                 <p>You know you want to.</p>
+                <p></p>
             </section>
 
             <form action="#">
                 <section class="form">
                     <p>Let's do this!</p>
-                        <div class="form-group">
-                            <label for="name">First name</label>
-                            <input required placeholder="John" type="text" id="name">
+                        <div class="row">
+                            <div class="form-group">
+                                <label for="name">First name</label>
+                                <input required placeholder="John" type="text" id="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Last name</label>
+                                <input required placeholder="Smith" type="text" id="name">
+                            </div>
                         </div>
 
-                        <div class="form-group">
-                            <label for="name">Last name</label>
-                            <input required placeholder="Smith" type="text" id="name">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input required placeholder="email@example.com" type="email" id="email">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="phone">Phone number</label>
-                            <input type="tel" id="phone" placeholder="123-456-789" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="11" />
+                        <div class="row">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input required placeholder="email@example.com" type="email" id="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone number</label>
+                                <input type="tel" id="phone" placeholder="123456789" name="phone" pattern="[0-9]{9}" maxlength="9" />
+                            </div>
                         </div>
                         
-                        <div class="form-group">
-                            <label for="password">Password</label>
-                            <input required placeholder="******" type="password" id="password">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="password">Confirm password</label>
-                            <input required placeholder="******" type="password" id="password">
+                        <div class="row">
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input required placeholder="******" type="password" id="password">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Confirm password</label>
+                                <input required placeholder="******" type="password" id="password">
+                            </div>
                         </div>
                     
                 </section>
