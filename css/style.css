@@ -8,11 +8,11 @@
 :root {
     /* for color palette use: https://www.realtimecolors.com/?colors=050315-fbfbfe-2f27ce-dedcff-433bff&fonts=Inter-Inter */
     --clr-text: hsl(31, 22%, 19%);
-    --clr-body: hsl(0, 0%, 100%);
-    --clr-background: hsl(156, 100, 99);
-    --clr-primary: hsl(180, 18, 75);
-    --clr-accent: hsl(191, 97, 23);
+    --clr-background: hsl(216, 100%, 99%);
+    --clr-primary: hsl(180, 18%, 75%);
+    --clr-accent: hsl(191, 97%, 23%);
 
+    --clr-logo: hsl(0, 0%, 100%);
     --clr-success: hsl(143, 100%, 26%);
     --clr-warning: hsl(43, 100%, 66%);
     --clr-error: hsl(348, 55%, 49%);
@@ -22,6 +22,8 @@
     /* for fonts sizes use: https://utopia.fyi/type/calculator*/
     --fs-logo: clamp(2rem, 10vw, 10rem);
     
+    --fs-100: clamp(0.7813rem, 0.7747rem + 0.0326vw, 0.8rem);
+    --fs-200: clamp(0.9375rem, 0.9158rem + 0.1087vw, 1rem);
     --fs-300: clamp(1rem, 0.8696rem + 0.6522vw, 1.375rem);
     --fs-400: clamp(1.2rem, 1.0196rem + 0.9022vw, 1.7188rem);
     --fs-500: clamp(1.44rem, 1.1936rem + 1.2321vw, 2.1484rem);
@@ -73,7 +75,7 @@ body{
 }
 
 .aside-photo > p {
-    color: var(--clr-body);
+    color: var(--clr-logo);
     text-align: center;
     padding: 1rem;
     margin-top: auto;
@@ -81,7 +83,7 @@ body{
 }
 
 .aside-photo > p > a {
-    color: var(--clr-body);
+    color: var(--clr-logo);
 }
 
 .logo {
@@ -98,7 +100,7 @@ body{
 .logo-name {
     font-family: var(--ff-logo);
     font-size: var(--fs-logo);
-    color: var(--clr-body);
+    color: var(--clr-logo);
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -115,9 +117,99 @@ body{
     justify-content: center;
     font-size: var(--fs-300);
     font-weight: bold;
-    padding-inline: 6rem;
+    
 }
 
 .description{
     background-color: var(--clr-primary);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-inline: 5rem;
+    
+}
+
+/* form */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: start;
+    flex-grow: 2;
+    
+}
+
+.form {
+    flex-grow: 1;
+    padding-inline: 5rem;
+}
+.form > p {
+    padding-block: 2rem;
+}
+
+.row {
+    display: flex;
+    gap: 4rem;
+    padding-bottom: 1rem;
+    
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+    width: 100%;
+}
+
+.form-group label {
+    text-transform: uppercase;
+    font-size: var(--fs-100);
+}
+
+.form-group input {
+    padding: .5rem;
+    border-radius: 0.5rem;
+}
+
+input:not(:placeholder-shown):valid {
+    outline-color: var(--clr-success);
+    background-color: hsl(from var(--clr-success) h s l / 20%);
+}
+
+input:not(:placeholder-shown):invalid {
+    outline-color: var(--clr-error);
+    background-color: hsl(from var(--clr-error) h s l / 30%);
+}
+
+input:focus:invalid {
+    outline-color: var(--clr-warning);
+    background-color: hsl(from var(--clr-warning) h s l / 20%);
+}
+
+
+/* submit */
+.submit {
+    flex-grow: 2;
+    padding-inline: 5rem;
+    background-color: var(--clr-primary);
+    width: 100%;
+    padding-top: 2rem;
+    
+}
+
+.submit button {
+    background-color: var(--clr-accent);
+    padding: 1rem 2.5rem;
+    border-radius: .5rem;
+    border-style: none;
+    color: var(--clr-logo);
+    font-weight: bold;
+    font-size: var(--fs-300);
+}
+
+.submit  a {
+    color:var(--clr-accent);
+    text-decoration: none;
 }
