@@ -15,7 +15,7 @@ This project is a basic implementation of a sign up form, demonstrating the use 
 
 ## Demo
 
-[**Live Demo**](https://radix-ratio.github.io/sign-up-form/) | [**Project Specs**](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form#project-solution)
+[**Live Demo**](https://kacper-korzen.github.io/sign-up-form/) | [**Project Specs**](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form#project-solution)
 
 ## Screenshots
 
@@ -36,4 +36,4 @@ This project is licensed under the MIT License. See [`LICENSE`](https://chooseal
 
 ## Authors
 
-- [radix-ratio](https://www.github.com/radix-ratio)
+- [Kacper K](https://www.github.com/kacper-korzen)
